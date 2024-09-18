@@ -1,0 +1,12 @@
+{
+  "name": "WetOptionLaunch",
+  "created_at": "2024-09-17 23:10:50",
+  "updated_at": "2024-09-17 23:10:50",
+  "status": "initiated",
+  "frontend_framework": "pure-css",
+  "icon_library": "ionicons",
+  "animation_library": "velocity.js",
+  "user_id": 165522684,
+  "user_login": "United-Visions",
+  "github_repo": "https://github.com/United-Visions/WetOptionLaunch"
+}

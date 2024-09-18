@@ -1,0 +1,78 @@
+/* Responsive design */
+@media screen and (max-width: 1023px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .product-info {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .product-info {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-description {
+        font-size: 0.95rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 0.95rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .button.is-large {
+        font-size: 1rem;
+        padding: 0.7rem 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .product-description {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .button.is-large {
+        font-size: 0.95rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

@@ -1,0 +1,34 @@
+<script>
+    var stripe = Stripe('{{ stripe_public_key }}');
+    var checkoutButton = document.getElementById('checkout-button');
+
+    checkoutButton.addEventListener('click', function() {
+        fetch('/create-checkout-session', {
+            method: 'POST',
+        })
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(session) {
+            return stripe.redirectToCheckout({ sessionId: session.id });
+        })
+        .then(function(result) {
+            if (result.error) {
+                alert(result.error.message);
+            }
+        })
+        .catch(function(error) {
+            console.error('Error:', error);
+        });
+    });
+
+    // Add animation using anime.js
+    anime({
+        targets: '.card',
+        opacity: [0, 1],
+        translateY: [50, 0],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: anime.stagger(200)
+    });
+</script>

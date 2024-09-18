@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+.hero.is-primary {
+    background-color: #00d1b2;
+}
+
+.hero-body {
+    padding: 3rem 1.5rem;
+}
+
+/* Main content styles */
+.section {
+    padding: 3rem 1.5rem;
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-image img {
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* Button styles */
+.button.is-primary {
+    background-color: #00d1b2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button.is-primary:hover {
+    background-color: #00c4a7;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f5f5f5;
+    padding: 3rem 1.5rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .column.is-half {
+        width: 100%;
+    }
+}
+
+/* Animation styles */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Typography styles */
+.title {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 400;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Material Icons styles */
+.material-icons {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,1 @@
+STRIPE_PUBLIC_KEY = 'pk_test_your_stripe_public_key_here'
